@@ -1,0 +1,110 @@
+(*Just a sample*)
+
+program correct1;
+
+ 
+
+ 
+
+type
+
+ string = array of char;
+
+ vector = array [3] of real;
+
+ string_array = array [10] of string;
+
+ 
+
+var
+
+ i:integer;
+
+ ar:array [2][100] of string; 
+
+ 
+
+function foo(arg1:integer;arg2: boolean):array [10] of real;
+
+ var
+
+ isPrime:real;
+
+ var2:integer;
+
+ procedure nested_proc(n,x:integer);
+
+ begin
+	
+ isPrime := 3.66;
+ writeString(cs);
+
+ writeString("Test Constant String");
+
+ writeString('Test Constant String Single');
+
+ writeReal(isPrime);
+
+ return
+
+ end;
+
+begin
+
+ var2:=readString();
+
+ if n < 0 then
+
+ result := prime(-n)
+
+ else if n mod 2 = 0 then
+
+ result := false
+
+ else begin
+
+ i := 3;
+
+ isPrime := true;
+
+ while isPrime and (i < n div 2) do begin
+
+ isPrime := (n mod i) <> 0;
+
+ i := i+2
+
+ end;
+
+ result := isPrime
+
+ end;
+
+ return
+
+end;
+
+ 
+
+begin
+
+i:=(a+1) mod cube(b+3);
+
+x:=(a <= b) and (c >= d);
+
+y:=15.7e-2 + (real) 45+mik;
+
+z:=a + b[1][k][(k+1)*2]; 
+
+writeString('Hello world');
+
+writeString('\n');
+
+for i:=n downto 1 do fac:=i*fac;
+
+reso := fac;
+
+return
+
+ 
+
+end.

@@ -1,0 +1,62 @@
+(*Just a sample*)
+
+program correct2;
+
+    type
+        string = array of char;
+	int1 = array of integer;
+	int2 = integer;
+	vector = array [3][2] of real;
+	string_array = array [10] of string;
+
+    var i, k: integer;
+
+    procedure nl();
+    begin writeString('\n') end;
+
+    (* This is a rather silly function *)
+    procedure compute(n: integer; k:integer);
+        var j: integer;
+
+        function cube(i: integer): integer;
+
+        begin
+            result := i * i * i;
+            return
+        end;
+
+    begin
+        j := (integer) (N - n) + cube(k );
+        writeString("Computed (N-n)+k^3 = "); 
+        writeInteger(j ); nl()
+    end;
+
+    function promptForInteger(prompt: string) : integer;
+    begin
+        writeString(prompt);
+        result := readInteger();
+        writeString('You typed: ');
+        writeInteger(result); 
+        nl();
+        return
+    end;
+
+(* Here you can see some useless lines.
+** Just for testing the multi-line comments ...
+*)
+
+begin
+    k := promptForInteger('Type a number: ');
+    i := promptForInteger('Type another number: ');
+    f0:=0;
+	f1:=1;
+	while n>1 do
+		begin
+			temp := f1;
+			f1 := f1+f0;
+			f0 := temp;
+			n := n-1
+		end;
+	result := f1;
+    compute(k,i) (* Here you can see some dummy comments! *)
+end.
