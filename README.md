@@ -3,6 +3,7 @@ Course's Project
 Verbal and Syntactic Analysis of the *PTuc Programming Language
 - flex
 - bison
+
 *(PTUC is a Pascal based language used in this course for educational purposes).
 
 ## Course Description
